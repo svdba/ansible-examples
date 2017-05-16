@@ -25,9 +25,9 @@
       environment:
          HI: test1
 
-    # here we are using the $env variable above
+    # here we are using the $env variable above with_items: "{{ items }}"
 
     - shell: echo $HI
-      environment: env
+      environment: "{{ env }}"
 
 
